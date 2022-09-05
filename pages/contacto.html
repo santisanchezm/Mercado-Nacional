@@ -4,78 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
-<body>
-        <header>
-            <!-- Menu principal con navegador -->
-            <nav>   
-                <div class="menu">
-                    <img class="logo" src="../images/mercadologo.jpg" alt="Logo Mercado">
-                    <ul class="seccion">
-                        <li class="section-type"><a href="../index.html">Home</a></li>
-                        <li class="section-type"><a href="../pages/quienes-somos.html">¿Quienes somos?</a></li>
-                        <li class="section-type"><a href="../pages/el-mercado.html">El mercado</a></li>
-                        <li class="section-type"><a href="../pages/nuestro-cafe.html">Nuestro café</a></li>
-                        <li class="section-type"><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
+<body class="body text-bg-dark p-0">
+    <header id="nav">
+        <!-- Menu principal con navegador -->
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/mercadologo.jpg" alt="logo mercado" width="30" height="24" class="d-inline-block align-text-top logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienes-somos.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/el-mercado.html">El mercado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/nuestro-cafe.html">Nuestra gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row p-3">
+            <div class="col-12 col-xl-6">
+                <div>
+                    <div>
+                        <img class="img-responsive" src="../images/mercadologo.jpg" alt="logo" style="width: 120px;">
+                        <p class="mrg-vertical-15">Gracias por comunicarte con Mercado Nacional. En breve nos comunicaremos con usted. </p>
+                        <div class="contact-info-widget mrg-top-30">
+                            <ul class="email-web">
+                                <li><i class="ti-email"></i><a href="mailto:almacenmercadonacional@gmail.com">almacenmercadonacional@gmail.com</a>
+                                </li>
+                                <li><i class="ti-web"></i><a href="//www.almacenmercadonacional.com">www.almacenmercadonacional.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </header>
-        <br><br><br>
-        <main class="grid">
-            <h1 class="main__1">Contacto</h1>
-            <div class="mensaje">
-                <b>Gracias por comunicarte con Mercado Nacional.</b>
-                <br>
-                <b>En breve nos comunicaremos con usted.</b>
             </div>
-            <div class="form">
-                <form action="">
-                    <fieldset class="border">
-                        <legend>
-                            !Contactanos!
-                        </legend>
-                        <p class="form__items">
-                            <label for="Nombre">Nombre</label>
-                            <input class="campo" type="text" name="Nombre">
-                        </p>
-                        <p class="form__items">
-                            <label for="Apellido">Apellido</label>
-                            <input class="campo" type="text" name="Apellido">
-                        </p>
-                        <p class="form__items">
-                            <label for="Mail">Mail</label>
-                            <input class="campo" type="email" name="Mail">
-                        </p>
-                        <p class="form__items">
-                            <label for="Telefono">Telefono</label>
-                            <input class="campo" type="number" name="Telefono" >
-                        </p>
-                    </fieldset>
+            <div class="col-12 col-xl-6">
+                <form class="contact-form-wrapper row" name="contactForm" id="contactForm">
+                    <div class="form-inside">
+                        <div class="title">
+                            <h3>Contacto</h3>
+                        </div>
+                        <div class="form-group col-sm-6 form-margin">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-sm-6 form-margin">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-12 form-margin">
+                            <input type="text" class="form-control hide" name="phone" id="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group col-sm-12 form-margin">
+                            <textarea class="form-control" name="message" rows="3" id="message" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-group col-sm-6" id="submit">
+                            <input class="btn btn-lg footer-contact-btn pull-right" type="submit" id="send_message" value="Enviar">
+                        </div>
+                    </div> 
                 </form>
-                <button class="button">Enviar</button>
             </div>
-            <br>
-            <div class="mensaje__menu">
-                <p>Para una atencion mas personalizada.VISITANOS!
-                </p>
+        </div>
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-center">
+                <p>Para una atencion mas personalizada.VISITANOS!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.9199277663!2d-57.53758118506698!3d-38.025646153969326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dde703c2c4f7%3A0xbb3b905cb058c11a!2sMERCADO%20NACIONAL%20almacen%20gourmet!5e0!3m2!1ses-419!2sar!4v1662305309761!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="img-contacto">
-                <img src="../images/mapa.jpeg" alt="mapa">
-            </div>
-        </main>          
-        <footer class="foot">
-            <ul>
-                <li class="footer__items">2236729459</li>
-                <li class="footer__items">almacenmercadonacional@gmail.com</li>
-                <li class="footer__items">Primera Junta 299</li>
-            </ul>
-            <ul>
-                <li class="footer__items">Seguinos!</li>
-            </ul>
-        </footer>
+        <div class="row">
+            <footer>
+                <div>
+                    <div>
+                        <ul>
+                            <li class="footer"><span class="footer__items">Tel:+54 223 672-9459</span></li>
+                            <li class="footer"><span class="footer__items">Mail: <a href="mailto:almacenmercadonacional@gmail.com">almacenmercadonacional@gmail.com</a></strong></span></span></li>
+                            <li class="footer"><span class="footer__items">(7600) Mar del Plata Argentina.</span></li>
+                            <li class="footer"><span class="footer__items">Primera Junta 299.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
 </body>
 </html>
 

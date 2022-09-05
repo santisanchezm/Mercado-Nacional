@@ -4,78 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Link al archivo css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Mercado Nacional</title>
 </head>
-<body class="body">
+<body class="body text-bg-dark p-0">
     <header id="nav">
         <!-- Menu principal con navegador -->
-        <nav>   
-            <div class="menu">
-                <img class="logo" src="./images/mercadologo.jpg" alt="Logo Mercado">
-                <ul class="seccion">
-                    <li class="section-type"><a href="./index.html">Home</a></li>
-                    <li class="section-type"><a href="./pages/quienes-somos.html">¿Quienes somos?</a></li>
-                    <li class="section-type"><a href="./pages/el-mercado.html">El mercado</a></li>
-                    <li class="section-type"><a href="./pages/nuestro-cafe.html">Nuestro café</a></li>
-                    <li class="section-type"><a href="./pages/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/mercadologo.jpg" alt="logo mercado" width="30" height="24" class="d-inline-block align-text-top logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav p-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/quienes-somos.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/el-mercado.html">El mercado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nuestro-cafe.html">Nuestra gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
+              </div>
             </div>
         </nav>
     </header>
-    <main class="main__1">
-        <div class="main">
-            <h1>Almacen Gourmet</h1>
-            <p>MERCADO NACIONAL es un almacén gourmet con productos de alta calidad y acompañado de servicios gastronómicos de categoría en diversos espacios.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/MERCADO NACIONAL-5.jpg" class="d-block w-100" alt="foto-1">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2 class="strong">Almacen Gourmet</h2>
+                          <p>MERCADO NACIONAL es un almacén gourmet con productos de alta calidad y acompañado de servicios gastronómicos de categoría en diversos espacios.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/MERCADO NACIONAL-68 (1).jpg" class="d-block w-100" alt="foto-2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/MERCADO NACIONAL-52.jpg" class="d-block w-100" alt="foto-3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
-        <div id="seccion">
-            <section class="contacto">
-                <div class="mensaje">
-                    <b>Gracias por comunicarte con Mercado Nacional.</b>
-                    <b>En breve nos comunicaremos con usted.</b>
-                </div>
-                <div class="form">
-                    <form action="">
-                        <fieldset class="border">
-                            <legend>
-                                !Contactanos!
-                            </legend>
-                            <p class="form__items">
-                                <label for="Nombre">Nombre</label>
-                                <input class="campo" type="text" name="Nombre">
-                            </p>
-                            <p class="form__items">
-                                <label for="Apellido">Apellido</label>
-                                <input class="campo" type="text" name="Apellido">
-                            </p>
-                            <p class="form__items">
-                                <label for="Mail">Mail</label>
-                                <input class="campo" type="email" name="Mail">
-                            </p>
-                            <p class="form__items">
-                                <label for="Telefono">Telefono</label>
-                                <input class="campo" type="number" name="Telefono" >
-                            </p>
-                        </fieldset>
-                    </form>
-                    <button class="button">Enviar</button>
-                </div>
-            </section>
-        </div>    
-    </main>
-    <footer class="foot">
-        <div class="footer">
-            <ul>
-                <li class="footer__items">2236729459</li>
-                <li class="footer__items">almacenmercadonacional@gmail.com</li>
-                <li class="footer__items">Primera Junta 299</li>
-            </ul>
-            <ul>
-                <li class="footer__items">Seguinos!</li>
-            </ul>
+        <div class="row section-2">
+            <div class="col-12 col-xl-6">
+                    <div>
+                        <div>
+                            <img class="img-responsive" src="./images/mercadologo.jpg" alt="logo" style="width: 120px;">
+                            <p class="mrg-vertical-15">Gracias por comunicarte con Mercado Nacional. En breve nos comunicaremos con usted. </p>
+                            <div class="contact-info-widget mrg-top-30">
+                                <ul class="email-web">
+                                    <li><i class="ti-email "></i><a class="link-secondary" href="mailto:almacenmercadonacional@gmail.com">almacenmercadonacional@gmail.com</a>
+                                    </li>
+                                    <li><i class="ti-web"></i><a class="link-secondary" href="//www.almacenmercadonacional.com">www.almacenmercadonacional.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-12 col-xl-6 p0">
+                <form class="contact-form-wrapper row" name="contactForm" id="contactForm">
+                    <div class="form-inside">
+                        <div class="title">
+                            <h3>Contacto</h3>
+                        </div>
+                        <div class="form-group col-sm-6 form-margin">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-sm-6 form-margin">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-12 form-margin">
+                            <input type="text" class="form-control hide" name="phone" id="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group col-sm-12 form-margin">
+                            <textarea class="form-control" name="message" rows="3" id="message" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-group col-sm-6" id="submit">
+                            <input class="btn btn-lg footer-contact-btn pull-right" type="submit" id="send_message" value="Enviar">
+                        </div>
+                    </div> 
+                </form>
+            </div>
         </div>
-    </footer> 
+        <div class="row">
+            <footer>
+                <div>
+                    <div>
+                        <ul>
+                            <li class="footer"><span class="footer__items">Tel:+54 223 672-9459</span></li>
+                            <li class="footer"><span class="footer__items">Mail: <a class="link-secondary" href="mailto:almacenmercadonacional@gmail.com">almacenmercadonacional@gmail.com</a></strong></span></span></li>
+                            <li class="footer"><span class="footer__items">(7600) Mar del Plata Argentina.</span></li>
+                            <li class="footer"><span class="footer__items">Primera Junta 299.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
 </body>
 </html>
-
