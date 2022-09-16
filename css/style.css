@@ -65,6 +65,10 @@ a:hover {
     width: 100%;
 }
 
+.title__car{
+    font-size: large;
+}
+
 /* CONTACTO */
 
 .form-inside{
